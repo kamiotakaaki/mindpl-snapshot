@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Snapeee</title>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+
+<script type="text/javascript" src="/js/snapshot5.js"></script>
+<script type="text/javascript" src="/js/jquery_snapshot2.js"></script>
+
+<script type="text/javascript">
+//User agent CSS switch
+if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+	document.write('<link rel="stylesheet" href="/css/snapshot_ba_sp.css" /><meta name="viewport" content="width=320, initial-scale=1" />');
+	
+	//hide browser header
+	function doScroll() { if (window.pageYOffset === 0) { window.scrollTo(0,1); } } 
+window.onload = function() { setTimeout(doScroll, 100); }  
+
+<!--$(window).bind('resize load', function(){
+	<!--$("html").css("zoom" , $(window).width()/320 );
+<!--});-->
+
+} else {
+	document.write('<link rel="stylesheet" href="/css/snapshot_ba.css" />');
+}
+
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-19980549-2");
+pageTracker._trackPageview();
+} catch(err) {}
+
+</script>
+</head>
+
+<body onload="load()">
+
+<div id="wrapper"><!-- wrapper start -->
+
+    <header id="header"><!-- header start -->
+    	<img src="/img/snapshot/img_logoL.png" class="logo" />
+    
+    	<div class="lang pc"><p><a href="#" class="current" id="click_ja" style="display:">日本語</a> / <a href="#" id="click_en">English</a></p></div>
+    	<a href="http://snape.ee/link/dl.html" target="_blank" style="float:right; margin:5px 8px"><img src="/img/snapshot/bnr_downloadapp_en.png" width="198" class="en sp"/><img src="/img/snapshot/bnr_downloadapp_ja.png" width="198" class="ja sp" /></a>
+    </header> <!-- header end -->
+    
+    <div id="content"><!-- content start -->
+    
+    	<div id="leftcontent"><!-- left content start -->
+        
+    	<img id="loading_img" class="loading"　/>
+        	<img id="photosp" class="sp" src="/img/snapshot/placeholder.png" />
+            <br class="clear" />
+            <img id="user_icon" src="/img/snapshot/img_noicon.png" />
+        	<div class="username">
+            	<p id="user_name">ニックネーム</p>
+            </div>
+       	
+            <img id="photo" src="/img/snapshot/placeholder.png" class="pc" />
+            
+           <span id="productLink"></span>
+            
+            <span id="productname"></span>
+            <span id="price"></span>
+            
+            <p id="phototitle"></p> 
+            
+            <div class="category">
+            	<ul id="category">
+                </ul>
+            </div>
+            
+            <div id="reaction"><span id="kawaii"></span> <span id="comment"></span></div>
+            
+            <div id="sns">
+            	<div class="fb-like" data-send="false" data-layout="button_count" data-width="200" data-show-faces="false"></div>
+
+                <span id="tweetbtn"></span>
+                
+                
+                <br />
+                <div class="pc">
+                <div id="fb-root"></div>
+                <script>$(document).ready(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+                
+                <script type="text/javascript">
+                    $("#fb-root").after('<fb:comments id="fb_comment" href="'+location.href+'" data-num-posts="2" data-width="600" ></fb:comments>');
+                </script>
+                </div>
+                
+                <br class="clear" />
+            </div>
+            
+        </div><!-- left content end -->
+        
+        <div id="rightcontent"><!-- right content star -->
+        <img src="/img/snapshot/img_aboutsnapeee.png" class="pc ja" />
+        <img src="/img/snapshot/img_aboutsnapeee_sp.png" class="sp ja" width="100%" />
+        <img src="/img/snapshot/img_aboutsnapeee_en.png" class="pc en" />
+        <img src="/img/snapshot/img_aboutsnapeee_en_sp.png" class="sp en" width="100%" />
+<br /><br /><br />
+<a href="https://itunes.apple.com/jp/app/snapeee/id434364551?mt=8" class="ios ja" target="_blank"><p>iPhoneでかわいい写真を作ろう!<br />
+<img src="/img/snapshot/img_appstore.png" /></p></a><p></p>
+<a href="https://play.google.com/store/apps/details?id=jp.co.mindpl.Snapeee&hl=ja" class="android ja" target="_blank"><p>Androidでかわいい写真を作ろう!<br />
+<img src="/img/snapshot/img_googleplay.png" /></p></a>
+
+<a href="https://itunes.apple.com/en/app/snapeee/id434364551?mt=8" class="ios en" target="_blank"><p>Make kawaii photo on iPhone!<br />
+<img src="/img/snapshot/img_appstore.png" /></p></a><p></p>
+<a href="https://play.google.com/store/apps/details?id=jp.co.mindpl.Snapeee&hl=en" class="android en" target="_blank"><p>Make Kawaii photo on Android!<br />
+<img src="/img/snapshot/img_googleplay.png" /></p></a>
+
+<p class="aulink ja">Android au版のダウンロードは<a href="http://pass.auone.jp/app/detail?app_id=5254400000001&sitemove=cloud" target="_blank">コチラ>></a></p>
+<p class="aulink en">Download on T-store <a href="http://www.tstore.co.kr/userpoc/game/viewProduct.omp?insProdId=0000279143" target="_blank">here>></a></p>
+<br />
+<a href="http://snape.ee/camp/wantedlp/wantedlp_ja.html" class="ja"><img src="/img/snapshot/bnr_wanted_ss_ja.png" /></a>
+<a href="http://snape.ee/camp/wantedlp/wantedlp_ja.html" class="en"><img src="/img/snapshot/bnr_wanted_ss_en.png" /></a>
+
+        </div><!-- right content end -->
+    
+    
+    </div><!-- content end -->
+<br class="clear" />
+
+<div id="footertop"></div>
+<footer id="footer"><!-- Footer start -->
+
+<p class="ja"><a href="/">Snapeeeについて</a> | <a href="/terms_of_use/ja/index.html">利用規約</a></p>
+<p class="en"><a href="/">About Snapeee</a> | <a href="/terms_of_use/index.html">Terms of Use</a></p>
+<div class="lang sp"><p><a href="#" id="spchange_ja" >日本語</a> / <a href="#" id="spchange_en" >English</a></p></div>
+<p class="copyright ja">Copyright © 2011, 2013 <a href="http://www.mindpl.co.jp" target="_blank">MindPalette</a> All Rights Reserved</p>
+<p class="copyright en">Copyright © 2011, 2013 <a href="http://www.mindpl.com" target="_blank">MindPalette</a> All Rights Reserved</p>
+</footer><!-- footer end -->
+
+</div><!-- wrapper end -->
+
+<script>
+function load()
+{
+!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0];
+	if(!d.getElementById(id)){
+		js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);
+		}
+	}(document,"script","twitter-wjs");
+}
+</script>
+</body>
+</html>

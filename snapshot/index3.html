@@ -1,0 +1,274 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name = "viewport" content = "width=640px">
+<meta property="og:title" content="Snapeee's photo"/>
+<meta property="og:image" content="http://snape.ee/img/face/icon512.png"/>
+<meta property="og:site_name" content="Snapeee">
+<title>Snapeee</title>
+
+
+
+<!--[if IE]>
+<link href="../css/ss/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width:480px)" href="../css/ss/iphone.css"/>
+<link rel="stylesheet" type="text/css" media="screen and (min-device-width:481px)" href="../css/ss/detail.css"/>
+
+<link rel="shortcut icon" href="../img/favicon.ico" />
+
+<!--<link href="../css/ss/iphone.css" rel="stylesheet" type="text/css" />-->
+
+<script type="text/javascript" src="../js/googleAnalytics.js"></script>
+<script type="text/javascript">  
+function doScroll() { if (window.pageYOffset === 0) { window.scrollTo(0,1); } }  
+window.onload = function() { setTimeout(doScroll, 100); }  
+</script>
+
+<script language="javascript">
+function browserLanguage() {
+  try {
+    return (navigator.browserLanguage || navigator.language || navigator.userLanguage).substr(0,2)
+  }
+  catch(e) {
+    return undefined;
+  }
+}
+
+function setLanguage(default_language, languages) {
+		
+  var addCSSRule = (document.createStyleSheet)
+    ? (function(sheet) {
+      return function(selector, declaration) {
+        sheet.addRule(selector, declaration);
+      };
+    })(document.createStyleSheet())
+    :
+    (function(sheet){
+      return function(selector, declaration) {
+        sheet.insertRule(selector + '{' + declaration + '}', sheet.cssRules.length);
+      };
+    })((function(e){
+      e.appendChild(document.createTextNode(''));
+      (document.getElementsByTagName('head')[0] || (function(h) {
+        document.documentElement.insertBefore(h, this.firstChild);
+        return h;
+      })(document.createElement('head'))).appendChild(e);
+      return e.sheet;
+    })(document.createElement('style')));
+
+
+
+  var array_include = function(ary, v) {
+    for (var i in ary) {
+      if (ary[i] == v) return true;
+    }
+    return false;
+  };
+
+
+
+  var lang = browserLanguage();
+  if(array_include(languages,lang)) {
+		  addCSSRule("." + default_language, "display: none;");
+
+  return true;
+ } else {
+addCSSRule("." + languages[0], "display: none;");
+
+    return false;
+ }
+ 
+ 	/*addCSSRule("." + default_language, "display: none;");
+  	removeCSSRule("." + lang);*/
+
+}
+
+
+
+/* defo_lang_en */
+setLanguage("en",["ja"]);
+</script>
+<script type="text/javascript" src="../js/jquery.js"></script> 
+<script type="text/javascript" src="../js/snapshot2.js"></script>
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-19980549-2");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+
+
+</head>
+
+<body>
+
+<div id="head_cloud"></div> 
+
+<!--sp-->
+<div id="bnr">
+<div class="ja">
+<a href="https://play.google.com/store/apps/details?id=jp.co.mindpl.Snapeee&hl=ja" onclick="javascript: pageTracker._trackPageview('/link/googleplay_sp/SPss_ja');"  target="_blank"><img src="/img/bnr/android_bnr640.jpg" width="640"/></a>
+</div>
+<div class="en">
+<a href="https://play.google.com/store/apps/details?id=jp.co.mindpl.Snapeee&hl=ja" onclick="javascript: pageTracker._trackPageview('/link/googleplay_sp/SPss_en');"  target="_blank"><img src="/img/bnr/android_bnr640.jpg" width="640"/></a>
+</div></a>
+</div>
+</div>
+
+<!--appstore_bnr-->
+<!--
+<div id="bnr">
+<div class="ja">
+<a href="http://itunes.apple.com/jp/app/snapeee/id434364551?mt=8" onclick="javascript: pageTracker._trackPageview('/link/appstore_ja_sstop');"  target="_blank"><img src="../img/pb/web_bnr.gif" /></a>
+</div>
+<div class="en">
+<a href="http://itunes.apple.com/en/app/snapeee/id434364551?mt=8" onclick="javascript: pageTracker._trackPageview('/link/appstore_en_sstop');"  target="_blank"><img src="../img/pb/001_e.jpg" /></a>
+</div>
+</div>-->
+
+
+<div id="main">    
+<div id="header">
+</div>
+<div class="clear"><hr /></div>
+<div id="side_l">
+<div id="photo_area">
+<img id="snap_img" class="snapshot" src="../img/pb/no_img.gif" alt="snapshot" width="576" />
+<img id="loading_img" class="loading" src="../img/pb/loadinfo.net.gif" alt="loading" />
+<div id="baloon">
+<!--<img class="baloon" src="../img/baloon.png" alt="baloon" width="640" />-->
+<img id="user_img" class="usericon" src="../img/pb/default_icon.gif" alt="user"/>
+<div id="user_name" class="username" ></div>
+<div id="snap_text" class="snaptext" ></div>
+
+<!--sns btn-->
+<ul class="sns">
+<!--<li><a href="http://mixi.jp/share.pl" class="mixi-check-button"data-key="63156d1c89f2cabcd74e2db117db1710021af8af">Check</a><script type="text/javascript" src="http://static.mixi.jp/js/share.js"></script></li>-->
+<li><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+<li>
+<script type="text/javascript">
+var url = document.URL;
+document.write('<iframe src="http://www.facebook.com/plugins/like.php?href='+encodeURIComponent(document.URL)+'&layout=standard&show_faces=false&width=300&action=like&colorscheme=light&height=40" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:40px;" allowTransparency="true"></iframe>');
+</script>
+</li>
+
+</ul>
+
+
+
+</div>
+</div>
+</div>
+
+<div id="side_r">
+<div class="snapeee">
+<div class="end_foot"></div>
+<img class="logo" src="../img/pb/snapshot_logo.png" alt="snapeee" />
+<img class="en" src="../img/pb/text_box_e.png" alt="english" />
+<img class="ja" src="../img/pb/text_box.png" alt="日本語" />
+</div>
+
+<div id="bnr_center">
+<div id="app_bnr">
+ <div class="ja">
+  <div class="apple1">
+  <a href="http://itunes.apple.com/jp/app/snapeee/id434364551?mt=8" onclick="javascript: pageTracker._trackPageview('/link/appstore/ja_sscenter');" target="_blank"><img src="../img/btn_appstore_off.jpg" alt="App store で無料ダウンロード!" width="227" /></a>
+  </div>
+   <div class="au1">
+   <a href="https://play.google.com/store/apps/details?id=jp.co.mindpl.Snapeee&hl=ja" onclick="javascript: pageTracker._trackPageview('/link/googleplay/ja_sscenter');" target="_blank"><img src="../img/btn_googleplay_off.jpg" alt="Downloard Free!!" width="227"/></a>
+   </div>
+ </div>
+  <div class="en">
+   <div class="apple1en">
+    <a href="http://itunes.apple.com/jp/app/snapeee/id434364551?mt=8" onclick="javascript: pageTracker._trackPageview('/link/appstore/en_sscenter');" target="_blank"><img src="../img/btn_appstore_off_eng.jpg" alt="App store!" width="227" /></a>
+   </div>
+    <div class="android1">
+    <a href="https://market.android.com/details?id=jp.co.mindpl.Snapeee&feature=search_result&hl=en" onclick="javascript: pageTracker._trackPageview('/link/googleplay/en_sscenter');" target="_blank"><img src="../img/btn_googleplay_en_off.jpg" alt="Android Market!" /></a>
+    </div>
+  </div>
+ </div>   
+</div>
+
+<!--PC_bnr-->
+
+<div id="camp_bnr">
+<div class="ja">
+<a href="http://www.kids-tokei.com/snapeee/" onclick="javascript: pageTracker._trackPageview('/link/camp/taiwanyume_ss_middle_en');"  target="_blank"><img src="../img/bnr/bnr_kidstokei450_en.jpg" /></a>
+</di
+><div class="en">
+<a href="http://www.kids-tokei.com/snapeee/" onclick="javascript: pageTracker._trackPageview('/link/camp/taiwanyume_ss_middle_en');"  target="_blank"><img src="../img/bnr/bnr_kidstokei450_en.jpg" /></a>
+</div>
+</div>
+
+
+<!--about Snapeee-->
+
+<selection>
+<div id="new_text">
+<div class="ja">
+
+<img src="/img/test/ss01.jpg" />
+<img src="/img/test/ss02.jpg" />
+<img src="/img/test/ss03.jpg" />
+<img src="/img/test/ss04.jpg" />
+</div>
+</div>
+</selection>
+
+<!--ここまで-->
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="clear"><hr /></div>
+</div>
+
+<div id="footer">
+<div class="white_bg">
+<div class="en">
+<a href="http://snape.ee" title="Snapeee">about Snapeee</a> | <a href="/terms_of_use/index.html" title="Terms of Use">Terms of Use</a> 
+</div>
+<div class="ja">
+<a href="http://snape.ee/ja" title="Snapeee">Snapeeeについて</a> | <a href="/terms_of_use/ja/index.html" title="利用規約">利用規約</a>  
+</div>
+<div class="copy">
+COPYRIGHT © 2011 <a href="http://mindpl.co.jp" target="_blank">MINDPALETTE CO. LTD.</a> ALL RIGHT RESERVED 
+</div>
+<div class="clear"><hr /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="footer_cloud">
+</div>
+
+<div id="bnr_foot">
+<div class="en">
+<a href="http://www.kids-tokei.com/snapeee/whats/" onclick="javascript: pageTracker._trackPageview('/link/kidstokei/ssbtm');" target="_blank"><img src="/img/bnr/bnr_kidstokei640_ja.jpg"/></a>
+<!--- 
+<a href="http://itunes.apple.com/en/app/snapeee/id434364551?mt=8" onclick="javascript: pageTracker._trackPageview('/link/appstore_en_ssfoot');"  target="_blank"><img src="/img/pb/foot_bnr_en.gif" /></a>--->
+</div>
+<div class="ja">
+<a href="http://www.kids-tokei.com/snapeee/whats/" onclick="javascript: pageTracker._trackPageview('/link/kidstokei/ssbtm');" target="_blank"><img src="/img/bnr/bnr_kidstokei640_ja.jpg"/></a>
+</div>
+</div>
+</body>
+
+
+
+</html>

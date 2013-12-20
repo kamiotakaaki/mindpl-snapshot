@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="keywords" content="PICTLINE, Smartphone Application, Picture, Filter,  GREE">
+<meta name="description" content="Cool and beautiful photo sharing. Share the most vivid and colorful moments in your daily life via Pictline.">
+<meta property="og:title" content="PICTLINE">
+<meta property="og:type" content="article">
+<meta property="og:description" content="Share the most vivid and colorful moments in your daily life via PICTLINE.">
+<meta property="og:site_name" content="PICTLINE | Cool and beautiful photo sharing app">
+<title>PICTLINE | Cool and beautiful photo sharing - GREE</title>
+<link rel="shortcut icon" href="/p/img/icon.ico">
+
+<script type="text/javascript">
+
+ var _gaq = _gaq || [];
+ _gaq.push(['_setAccount', 'UA-36259445-1']);
+ _gaq.push(['_trackPageview']);
+
+ (function() {
+   var ga = document.createElement('script'); ga.type =
+'text/javascript'; ga.async = true;
+   ga.src = ('https:' == document.location.protocol ? 'https://ssl' :
+'http://www') + '.google-analytics.com/ga.js';
+   var s = document.getElementsByTagName('script')[0];
+s.parentNode.insertBefore(ga, s);
+ })();
+
+</script>
+
+<script type="text/javascript" src="/js/jquery.js"></script>
+
+<script type="text/javascript">
+//User agent CSS switch
+if (navigator.userAgent.indexOf('iPhone') > 0 || navigator.userAgent.indexOf('Android') > 0) {
+	document.write('<link rel="stylesheet" type="text/css" href="snapshot_sp.css"/><meta name="viewport" content="width=640" />');
+	
+	//hide browser header
+	function doScroll() { if (window.pageYOffset === 0) { window.scrollTo(0,1); } } 
+$(window).onload = function() { setTimeout(doScroll, 100); }  
+
+$(window).bind('resize load', function(){
+	$("html").css("zoom" , $(window).width()/640 );
+});
+
+} else {
+	document.write('<link rel="stylesheet" type="text/css" href="snapshot_pc_en.css"/>');
+}
+</script>
+
+<script type="text/javascript" src="jquery_snapshot.js"></script>
+<script type="text/javascript" src="/js/snapshot3.js"></script>
+
+<meta name="twitter:card" content="photo">
+<meta name="twitter:site" content="@">
+
+</head>
+
+<body onload="load()">
+
+
+<div id="wrapper"><!--- wrapper start --->
+<div id="header"><!--- Header start --->
+<a href="http://pictline.net/" target="_blank" class="pc logo"><img src="/p/images/pict_logo_large.png" /></a>
+<a href="http://pictline.net/" target="_blank" class="sp logo"><img src="/p/images/pict_logo_small.png" class="sp logo" /></a>
+
+	<a href="/p/index.html" class="headdl sp ja" target="_blank"><p>アプリをダウンロード</p></a>
+    <a href="/p/index.html" class="headdl sp en" target="_blank"><p>Download App</p></a>
+
+    <div class="lang"><a href="#" id="click_ja"><img src="/p/images/pict_arrow.png" class="ja" /> 日本語</a>  |  <a href="#" id="click_en"><img src="/p/images/pict_arrow.png" class="en" /> English</a></div>
+
+<br class="clear" />
+</div><!---header end--->
+
+<div id="content"><!--- content start --->
+<div class="userarea">
+<div class="photofloat">
+<div class="userphoto">
+
+<img id="loading_img" class="loading"　/>
+<img id="snap_img" class="snapshot" alt="snapshot" />
+
+</div>
+</div>
+
+<div class="download pc">
+<img src="/p/images/snaplogo_ja.png" class="logo ja" />
+<img src="/p/images/snaplogo_en.png" class="logo en" />
+
+
+<a href="https://itunes.apple.com/jp/app/id487538979" class="appstore pc" target="_blank" onclick="_gaq.push(['_trackEvent', 'toLP', 'iOS',
+'button']);" title="Pictline － モードな女子のための写真アプリ。フィルターやフレームで美しくアレンジ。"><img src="/p/images/bnr_ios.png" onmouseover="this.src='/p/images/bnr_ios_on.png'" onmouseout="this.src='/p/images/bnr_ios.png'" /></a>
+
+<a href="https://play.google.com/store/apps/details?id=jp.gree.android.pf.greeapp3323" class="google pc" target="_blank" onclick="_gaq.push(['_trackEvent', 'toLP', 'android', 'button']);" title="Pictline － モードな女子のための写真アプリ。"><img src="/p/images/bnr_android.png" onmouseover="this.src='/p/images/bnr_android_on.png'" onmouseout="this.src='/p/images/bnr_android.png'" style="margin-left:12px;" /></a>
+
+</div>
+
+<div class="usercomment">
+	<ul>
+		<li class="icon"><img id="user_img" src="/img/snapshot/img_noicon.png" class="snapshot" width="60" /></li>
+        <li id="user_name" class="name"></li>
+        <li id="user_name" class="invite en">Invitation Code : <span id="invite_code1"></span></li>
+        <li id="user_name" class="invite ja">招待コード : <span id="invite_code2"></span></li>
+    </ul>
+    <br class="clear" />
+    <p id="snap_text" class="title"></p>
+	<br class="clear" />
+</div>
+
+<br class="clear" />
+
+</div>
+
+<div class="social">
+
+<div class="fb-like" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
+
+<span id="tweetbtn"></span>
+
+<div class="pc">
+<div id="fb-root"></div>
+<script>$(document).ready(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<script type="text/javascript">
+    $("#fb-root").after('<fb:comments id="fb_comment" href="'+location.href+'" data-num-posts="2" data-width="600" ></fb:comments>');
+</script>
+</div>
+
+<br class="clear sp" />
+</div>
+
+
+<img src="/p/images/snaplogo_ja.png" class="logo ja sp" />
+<img src="/p/images/snaplogo_en.png" class="logo en sp" />
+<br class="clear sp" />
+
+
+<a href="https://itunes.apple.com/jp/app/id487538979" class="appstore sp" target="_blank" onclick="_gaq.push(['_trackEvent', 'toLP', 'iOS',
+'button']);" title="Pictline － モードな女子のための写真アプリ。フィルターやフレームで美しくアレンジ。"><p><img src="/p/images/img_bnr_ios.png" /></p></a>
+
+<a href="https://play.google.com/store/apps/details?id=jp.gree.android.pf.greeapp3323" class="google sp" target="_blank" onclick="_gaq.push(['_trackEvent', 'toLP', 'android', 'button']);" title="Pictline － モードな女子のための写真アプリ。"><p><img src="/p/images/img_bnr_android.png" /></p></a>
+
+<br class="clear sp" />
+
+<br class="sp" />
+<br class="sp" />
+
+<a href="http://snape.ee/" class="snapeeeweb sp" target="_blank"><img src="/p/images/img_snapsp.png" /></a>
+
+</div><!--- content end --->
+
+<div id="footer">
+<p><a href="/p/terms_of_user/index.html" class="ja" target="_blank">利用規約</a></p>
+<p><a href="/p/terms_of_user/index.html" class="en" target="_blank">Terms of Use</a></p>
+<p>&copy; GREE, Inc.</p>
+
+</div><!--- wrapper end --->
+
+
+<script>
+function load()
+{
+!function(d,s,id){
+	var js,fjs=d.getElementsByTagName(s)[0];
+	if(!d.getElementById(id)){
+		js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);
+		}
+	}(document,"script","twitter-wjs");
+}
+</script>
+</body>
+</html>

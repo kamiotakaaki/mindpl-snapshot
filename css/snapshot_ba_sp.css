@@ -1,0 +1,285 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin:0;
+	padding:0;
+	font-size:14px;
+	background: #f5f5f5;
+}
+
+
+.clear {
+	clear:both;
+	line-height:0;
+	font-size:0;
+	height:0;
+	padding:0;
+	margin:0;
+}
+
+
+a, .pink {color:#fe4689;text-decoration:none;}
+
+#wrapper {
+	width:100%;
+}
+
+
+
+#header {
+	width:320px;
+	margin:0 auto;
+	height:50px;
+	background: #fff;
+	padding:0px 0px 0px 0px;
+}
+
+header {
+        padding:10px 11px;
+		background: #fff;
+}
+
+        header .lang {
+                float:right;
+				background: #fff;
+	        }
+#headerLogo { 
+  text-align:left;
+  float:left;
+  width:100px;
+  margin-top:15px;
+  padding-left:8px;
+ }
+#headerSns {
+float: right;
+text-align: right;
+margin-top:10px;
+padding-right: 8px;
+font-size:12px;
+}
+	
+#content {
+	width:304px;
+	margin:0 auto;
+}
+
+	#leftcontent {
+		width:304px;
+		text-align:center;
+		margin:8px 0;
+	}
+	
+		#leftcontent #user_icon {
+			width:34px;
+			height:34px;
+			margin:0 2% 0 0;
+			float:left;
+		}
+		
+		#leftcontent .username {
+			text-align:left;
+		}
+		
+			#leftcontent .username p {
+				margin:7px 0 0;
+				font-size:10px;
+				color:#646464;
+			}
+			
+			#leftcontent .username p#user_name {
+				font-size:13px;
+				color:#353535;
+				font-weight:bold;
+			}
+		
+		#leftcontent #photo {
+			 display:none; 
+		}
+				
+		#leftcontent #photosp {
+			width:304px;
+			height:auto;
+			margin:8px auto;
+		}
+		
+		#leftcontent .productname {
+			margin:16px 0 0;
+			font-weight:bold;
+			color:#646464;
+			text-align:left;
+		}
+		
+		#leftcontent .price {
+			margin:4px 0 0;
+			font-weight:bold;
+			color:#646464;
+			text-align:left;
+		}
+		
+		#leftcontent .productpage {
+			margin:16px 0 0;
+			text-decoration:none;
+			background:url(../img/snapshot/icon_link.png) no-repeat left;
+			padding:0 0 0 22px;
+			float:right;
+		}
+		
+		#leftcontent #phototitle {
+			color:#646464;
+			line-height:1.6;
+			font-size:12px;
+			text-align:left;
+		}
+		
+		#leftcontent .category {
+			margin:16px 0 ;
+			color:#646464;
+			min-height:14px;
+			padding:0 ;
+		}
+		
+			#leftcontent .category ul#category {
+				list-style:none;
+				padding:0;
+				color:#f6f6f6;
+			}
+			#leftcontent .category ul#category li {
+				 font-size:12px;
+				 color:#a29188;
+				 float:left;
+				 margin: 0 8px 0 0;
+				 border-radius:10px;
+				 background:#f0e3dc;
+				 text-shadow:#fff 0 1px 0;
+				 padding:2px 4px;
+			}
+		
+		#leftcontent #reaction {
+			padding:16px 0;
+			font-weight:bold;
+			color:#646464;
+			border-top:#eee 1px solid;
+			border-bottom:#eee 1px solid;
+		}
+			#leftcontent #reaction span#kawaii {
+				background:url(../img/snapshot/icon_kawaii_sp.png) no-repeat left;
+				padding:0 0 0 26px;
+			}
+			
+			#leftcontent #reaction span#comment {
+				background:url(../img/snapshot/icon_comment_sp.png) no-repeat left;
+				padding:0 0 0 24px;
+				margin:0 0 0 16px;
+			}
+		
+		#leftcontent #sns {
+			margin:16px 0 0;
+		}
+
+	#rightcontent {
+		width:304px;
+		text-align:center;
+		margin:8px auto;
+	}
+	
+	#rightcontent p {
+		color:#646464;
+		line-height:1.6;
+		font-size:12px;
+		margin:12px auto;
+	}
+	
+	#rightcontent p.aulink {
+		color:#646464;
+		line-height:1.6;
+		font-size:11px;
+		text-align:center;
+	}
+	
+	#rightcontent a.ios,
+	#rightcontent a.android {
+		text-decoration:none;
+		margin:6px auto;
+	}
+	
+	#rightcontent a.ios p {
+		width:304px;
+		color:#ffffff;
+		text-decoration:none;
+		text-align:center;
+		background: rgb(124,124,124); /* Old browsers */
+		background: -moz-linear-gradient(top,  rgba(124,124,124,1) 0%, rgba(87,87,87,1) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(124,124,124,1)), color-stop(100%,rgba(87,87,87,1))); /* Chrome,Safari4+ */
+		background: -o-linear-gradient(top,  rgba(124,124,124,1) 0%,rgba(87,87,87,1) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(124,124,124,1) 0%,rgba(87,87,87,1) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(124,124,124,1) 0%,rgba(87,87,87,1) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7c7c7c', endColorstr='#575757',GradientType=0 ); /* IE6-9 */
+		border:#000000 1px solid;
+		box-shadow:inset #dedede 0px 1px 0px;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	
+	#rightcontent a.ios p img {
+		width:auto;
+		height:30px;
+	}
+	
+	#rightcontent a.android p {
+		width:304px;
+		color:#ffffff;
+		text-decoration:none;
+		text-align:center;
+		background: #000000;
+		border:#000000 1px solid;
+		box-shadow:inset #a1a1a1 0px 1px 0px;
+		display:table-cell;
+		vertical-align:middle;
+	}
+	
+	#rightcontent a.android p img {
+		width:auto;
+		height:30px;
+	}
+
+#footertop {
+	height:1px;
+	width:100%;
+	background: rgb(241,241,241); /* Old browsers */
+	background: -moz-linear-gradient(left,  rgba(241,241,241,1) 0%, rgba(212,212,212,1) 50%, rgba(241,241,241,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(241,241,241,1)), color-stop(50%,rgba(212,212,212,1)), color-stop(100%,rgba(241,241,241,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  rgba(241,241,241,1) 0%,rgba(212,212,212,1) 50%,rgba(241,241,241,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  rgba(241,241,241,1) 0%,rgba(212,212,212,1) 50%,rgba(241,241,241,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  rgba(241,241,241,1) 0%,rgba(212,212,212,1) 50%,rgba(241,241,241,1) 100%); /* IE10+ */
+	background: linear-gradient(to right,  rgba(241,241,241,1) 0%,rgba(212,212,212,1) 50%,rgba(241,241,241,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#f1f1f1',GradientType=1 ); /* IE6-9 */
+	margin:30px auto 0;
+	box-shadow:#ffffff 0px 1px 0px;
+}
+
+
+
+#footer {
+	width:100%;
+	text-align:center;
+	margin:30px auto 0;
+	font-size:12px;
+}
+	#footer p {
+		margin:8px;
+		color:#646464;
+	}
+	#footer p.copyright {
+		font-size:10px;
+		margin:0 0 30px 0;
+	}
+	
+	
+.pc {
+	display:none;
+	height:0;
+	width:0;
+}
