@@ -144,8 +144,10 @@ pageTracker._trackPageview();
 <div id="header-wrapper">
 <div id="header">
 		<div id="headerLogo" width="100px">
+			<a href="http://snape.ee/">
 			<img src="http://snape.ee/img/common/img_logo.png" height="30px" class="pc">
 			<img src="/img/logo_sp.png" class="sp" height="21px">
+			</a>
 		</div>
 		<div id="headerSns" width="200px">
 			<div class="pc">
