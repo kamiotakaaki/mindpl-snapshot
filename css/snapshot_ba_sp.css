@@ -46,6 +46,11 @@ header {
                 float:right;
 				background: #fff;
 	        }
+#header-wrapper {
+	background-color:#fff;
+	width: 100%;
+	margin: 0 auto;
+}
 #headerLogo { 
   text-align:left;
   float:left;
