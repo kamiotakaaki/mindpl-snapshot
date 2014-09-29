@@ -1,1 +1,0 @@
-RewriteEngine On RewriteCond %{HTTP_USER_AGENT} ^(DoCoMo|KDDI|DDIPOKET|UP\.Browser|J-PHONE|Vodafone|SoftBank) RewriteRule ^$ /m/[R]

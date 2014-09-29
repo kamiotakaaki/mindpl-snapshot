@@ -3,6 +3,20 @@ lock '3.2.1'
 
 set :application, 'snapshot'
 set :repo_url, 'git@bitbucket.org:mindpl/snapshot.git'
+ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+
+set :deploy_to, '/var/www/webapps/snapshot/'
+set :scm, :git
+set :format, :pretty
+set :log_level, :debug
+set :pty, true
+#set :deploy_via, :copy
+
+set :ssh_options, {
+  keys: [File.expand_path('~/.ssh/mindpl.pem')],
+  forward_agent: true,
+  auth_methods: %w(publickey)
+}
 
 namespace :deploy do
 
