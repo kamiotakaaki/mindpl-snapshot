@@ -301,9 +301,6 @@ pageTracker._trackPageview();
 <a href="https://play.google.com/store/apps/details?id=jp.co.mindpl.Snapeee&hl=en" class="android en" target="_blank"><p>Make Kawaii photo on Android!<br />
 <img src="http://snape.ee/img/snapshot/img_googleplay.png" /></p></a>
 
-<p class="aulink ja">Android au版のダウンロードは<a href="http://pass.auone.jp/app/detail?app_id=5254400000001&sitemove=cloud" target="_blank">コチラ>></a></p>
-<p class="aulink en">Download on T-store <a href="http://www.tstore.co.kr/userpoc/game/viewProduct.omp?insProdId=0000279143" target="_blank">here>></a></p>
-
         </div><!-- right content end -->
     
     
