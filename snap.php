@@ -19,7 +19,7 @@ Snapeeeへようこそ！
 http://mindpl.co.jp/recruit/
 を御覧ください。
 
-または、TwitterID @srockstyle までお気軽に声かけてください♪
+または、TwitterID @ichizin までお気軽に声かけてください♪
 
 これからもSnapeeeをよろしくお願いします！   
 -->
